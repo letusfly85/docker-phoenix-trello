@@ -3,7 +3,7 @@ FROM marcelocg/phoenix
 RUN git clone https://github.com/bigardone/phoenix-trello.git && \
     cd phoenix-trello && \
     yes | mix deps.get && \
-    npm install -g webpack && \
+    npm install -g webpack
 
 ADD docker.exs phoenix-trello/config/
 
