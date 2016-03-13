@@ -3,7 +3,8 @@ FROM tylerwaitt/phoenix
 RUN git clone https://github.com/bigardone/phoenix-trello.git && \
     cd phoenix-trello && \
     yes | mix deps.get && \
-    npm install -g webpack
+    npm install -g webpack && \
+    npm install webpack
 
 RUN apt-get update && \
     apt-get install -y erlang-dev build-essential
