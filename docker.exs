@@ -40,7 +40,7 @@ config :phoenix_trello, PhoenixTrello.Repo,
   username: "#{System.get_env("POSTGRES_USER")}",
   password: "#{System.get_env("POSTGRES_PASSWORD")}",
   database: "#{System.get_env("POSTGRES_DATABASE")}",
-  hostname: postgresql,
+  hostname: "postgresql",
   pool_size: 10
 
 # Guardian configuration
