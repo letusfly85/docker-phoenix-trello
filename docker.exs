@@ -9,7 +9,7 @@ use Mix.Config
 config :phoenix_trello, PhoenixTrello.Endpoint,
   http: [port: 80],
   debug_errors: true,
-  code_reloader: true,
+  code_reloader: false,
   cache_static_lookup: false,
   check_origin: false,
   watchers: [
