@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :phoenix_trello, PhoenixTrello.Endpoint,
-  http: [port: 4000],
+  http: [port: 80],
   debug_errors: true,
   code_reloader: true,
   cache_static_lookup: false,
@@ -37,7 +37,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :phoenix_trello, PhoenixTrello.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "#{System.get_env("POSTGRES_USERNAME")}",
+  username: "#{System.get_env("POSTGRES_USER")}",
   password: "#{System.get_env("POSTGRES_PASSWORD")}",
   database: "#{System.get_env("POSTGRES_DATABASE")}",
   hostname: postgresql,
