@@ -5,6 +5,9 @@ RUN git clone https://github.com/bigardone/phoenix-trello.git && \
     yes | mix deps.get && \
     npm install -g webpack
 
+RUN apt-get update && \
+    apt-get install -y erlang-dev
+
 ADD docker.exs phoenix-trello/config/
 
 ADD docker-run.sh phoenix-trello/bin/
